@@ -213,7 +213,7 @@ const useMLModel = (battery, weatherData, deviceState) => {
   useEffect(() => {
     const fetchBatteryAdvice = async () => {
       try {
-        const response = await axios.post("http://127.0.0.1:8000/api/advice", {
+        const response = await axios.post("https://thermosense-api.onrender.com", {
           battery_temp: battery.temperature,
           ambient_temp: weatherData.temperature,
           device_state: deviceState
