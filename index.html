@@ -1,59 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThermoSense - React Battery Health Monitor</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThermoSense - React Battery Health Monitor</title>
+    <link rel="stylesheet" href="style.css">
 
-  <!-- React CDN -->
-  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-  <!-- Chart.js -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <!-- Axios -->
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
+    <!-- Axios for HTTP requests -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
 
-  <meta name="description" content="React-based real-time battery health monitoring with live device sensors and weather data">
+    <meta name="description" content="React-based real-time battery health monitoring with live device sensors and weather data">
 </head>
 <body>
-
-  <!-- Optional: Simple manual testing UI -->
-  <section style="padding: 20px; border-bottom: 1px solid #ccc;">
-    <h2>Manual Sensor Input (Test API)</h2>
-
-    <label for="battery_temp">Battery Temp (°C):</label>
-    <input type="number" id="battery_temp" step="0.1" required><br><br>
-
-    <label for="ambient_temp">Ambient Temp (°C):</label>
-    <input type="number" id="ambient_temp" step="0.1" required><br><br>
-
-    <label for="device_state">Device State:</label>
-    <select id="device_state">
-      <option value="">Select State</option>
-      <option value="charging">Charging</option>
-      <option value="discharging">Discharging</option>
-      <option value="idle">Idle</option>
-    </select><br><br>
-
-    <button onclick="submitSensorData()">Submit</button>
-
-    <!-- Display results -->
-    <div id="alert" class="alert-message">Alert Level: --</div>
-    <div id="advice" style="margin-top: 10px;"></div>
-    <div id="action" style="margin-top: 10px;"></div>
-  </section>
-
-  <!-- React application mount point -->
-  <div id="root"></div>
-
-  <!-- React App Script -->
-  <script type="text/babel" src="app.js"></script>
-
-  <!-- JS for manual API testing -->
-  <script type="module" src="app.updated.js"></script>
+    <div id="root"></div>
+    <script type="text/babel" src="app.js"></script>
 </body>
 </html>
