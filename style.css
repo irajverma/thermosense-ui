@@ -1353,9 +1353,9 @@ select.form-control {
   gap: var(--space-20);
 }
 
-.analysis-result {
+/* .analysis-result {
   min-height: 100px;
-}
+} */
 
 .risk-level {
   display: inline-block;
@@ -1380,11 +1380,11 @@ select.form-control {
   background: rgba(var(--color-error-rgb), 0.15);
   color: var(--color-error);
 }
-
+/* 
 .analysis-text {
   margin-bottom: var(--space-16);
   line-height: 1.6;
-}
+} */
 
 .recommendations {
   background: var(--color-bg-8);
@@ -1422,11 +1422,11 @@ select.form-control {
   background: var(--color-bg-5);
 }
 
-.health-analysis {
+/* .health-analysis {
   display: flex;
   gap: var(--space-20);
   align-items: center;
-}
+} */
 
 .health-score {
   flex-shrink: 0;
@@ -1590,8 +1590,8 @@ select.form-control {
     grid-template-columns: 1fr;
   }
   
-  .health-analysis {
+/*   .health-analysis {
     flex-direction: column;
     gap: var(--space-16);
-  }
+  } */
 }
