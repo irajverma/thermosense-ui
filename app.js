@@ -386,7 +386,7 @@ const Sidebar = ({ activeTab, onTabChange, notificationCount }) => {
   const tabs = [
     { id: 'dashboard', label: '📊 Live Dashboard' },
     { id: 'monitoring', label: '📈 Real-Time Chart' },
-    { id: 'analytics', label: '🔍 Analytics' },
+    // { id: 'analytics', label: '🔍 Analytics' },
     { id: 'advisory', label: '🤖 AI Advisory' },
     { id: 'notifications', label: '🔔 Alerts', badge: notificationCount },
     { id: 'settings', label: '⚙️ Settings' }
