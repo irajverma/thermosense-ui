@@ -17,11 +17,9 @@ export async function sendSensorData(batteryTemp, ambientTemp, deviceState) {
     const result = response.data;
 
     // Update the DOM
-    const adviceEl = document.getElementById("advice");
     const alertEl = document.getElementById("alert");
     const actionEl = document.getElementById("action");
 
-    if (adviceEl) adviceEl.innerText = result.natural_language_tip;
     if (alertEl) alertEl.innerText = `Alert Level: ${result.alert_level}`;
     if (actionEl) actionEl.innerText = result.optional_action || "";
 
@@ -29,18 +27,15 @@ export async function sendSensorData(batteryTemp, ambientTemp, deviceState) {
   } catch (error) {
     console.error("Error from ThermoSense API:", error);
 
-    const adviceEl = document.getElementById("advice");
     const alertEl = document.getElementById("alert");
     const actionEl = document.getElementById("action");
 
-    if (adviceEl) adviceEl.innerText = "⚠️ Unable to fetch advice. Please try again later.";
     if (alertEl) alertEl.innerText = "Alert Level: error";
     if (actionEl) actionEl.innerText = "";
 
     return {
       predicted_health_impact: null,
       alert_level: "error",
-      natural_language_tip: "⚠️ Unable to fetch advice. Please try again later.",
       optional_action: null
     };
   }
