@@ -1226,83 +1226,83 @@ const Settings = ({ isVisible }) => {
   );
 };
 
-// Analytics Component
-const Analytics = ({ isVisible }) => {
-  if (!isVisible) return null;
+// // Analytics Component
+// const Analytics = ({ isVisible }) => {
+//   if (!isVisible) return null;
 
-  return (
-    <div>
-      <div className="analytics-header">
-        <h1>Historical Analytics</h1>
-        <div className="analytics-controls">
-          <select className="form-control">
-            <option value="1h">Last Hour</option>
-            <option value="6h">Last 6 Hours</option>
-            <option value="24h" selected>Last 24 Hours</option>
-            <option value="7d">Last 7 Days</option>
-          </select>
-          <button className="btn btn--sm btn--primary">Refresh</button>
-        </div>
-      </div>
+//   return (
+//     <div>
+//       <div className="analytics-header">
+//         <h1>Historical Analytics</h1>
+//         <div className="analytics-controls">
+//           <select className="form-control">
+//             <option value="1h">Last Hour</option>
+//             <option value="6h">Last 6 Hours</option>
+//             <option value="24h" selected>Last 24 Hours</option>
+//             <option value="7d">Last 7 Days</option>
+//           </select>
+//           <button className="btn btn--sm btn--primary">Refresh</button>
+//         </div>
+//       </div>
       
-      <div className="analytics-grid">
-        <div className="analytics-card card">
-          <h3>Temperature Trends</h3>
-          <div className="trend-summary">
-            <div className="trend-stat">
-              <span className="trend-label">Avg Device Temp</span>
-              <span className="trend-value">28.5°C</span>
-            </div>
-            <div className="trend-stat">
-              <span className="trend-label">Peak Temperature</span>
-              <span className="trend-value">35.2°C</span>
-            </div>
-            <div className="trend-stat">
-              <span className="trend-label">Thermal Events</span>
-              <span className="trend-value">2</span>
-            </div>
-          </div>
-        </div>
+//       <div className="analytics-grid">
+//         <div className="analytics-card card">
+//           <h3>Temperature Trends</h3>
+//           <div className="trend-summary">
+//             <div className="trend-stat">
+//               <span className="trend-label">Avg Device Temp</span>
+//               <span className="trend-value">28.5°C</span>
+//             </div>
+//             <div className="trend-stat">
+//               <span className="trend-label">Peak Temperature</span>
+//               <span className="trend-value">35.2°C</span>
+//             </div>
+//             <div className="trend-stat">
+//               <span className="trend-label">Thermal Events</span>
+//               <span className="trend-value">2</span>
+//             </div>
+//           </div>
+//         </div>
 
-        <div className="analytics-card card">
-          <h3>Battery Performance</h3>
-          <div className="battery-analytics">
-            <div className="battery-stat">
-              <span className="battery-label">Charge Cycles</span>
-              <span className="battery-value">127</span>
-            </div>
-            <div className="battery-stat">
-              <span className="battery-label">Health Score</span>
-              <span className="battery-value">87%</span>
-            </div>
-            <div className="battery-stat">
-              <span className="battery-label">Efficiency</span>
-              <span className="battery-value">94%</span>
-            </div>
-          </div>
-        </div>
+//         <div className="analytics-card card">
+//           <h3>Battery Performance</h3>
+//           <div className="battery-analytics">
+//             <div className="battery-stat">
+//               <span className="battery-label">Charge Cycles</span>
+//               <span className="battery-value">127</span>
+//             </div>
+//             <div className="battery-stat">
+//               <span className="battery-label">Health Score</span>
+//               <span className="battery-value">87%</span>
+//             </div>
+//             <div className="battery-stat">
+//               <span className="battery-label">Efficiency</span>
+//               <span className="battery-value">94%</span>
+//             </div>
+//           </div>
+//         </div>
 
-        <div className="analytics-card card">
-          <h3>Environmental Impact</h3>
-          <div className="environmental-factors">
-            <div className="env-factor">
-              <span className="env-label">Weather Correlation</span>
-              <span className="env-value">Moderate</span>
-            </div>
-            <div className="env-factor">
-              <span className="env-label">Optimal Temp Range</span>
-              <span className="env-value">20-30°C</span>
-            </div>
-            <div className="env-factor">
-              <span className="env-label">Risk Level</span>
-              <span className="env-value">Low</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+//         <div className="analytics-card card">
+//           <h3>Environmental Impact</h3>
+//           <div className="environmental-factors">
+//             <div className="env-factor">
+//               <span className="env-label">Weather Correlation</span>
+//               <span className="env-value">Moderate</span>
+//             </div>
+//             <div className="env-factor">
+//               <span className="env-label">Optimal Temp Range</span>
+//               <span className="env-value">20-30°C</span>
+//             </div>
+//             <div className="env-factor">
+//               <span className="env-label">Risk Level</span>
+//               <span className="env-value">Low</span>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
 // Main Dashboard Component
 const Dashboard = () => {
